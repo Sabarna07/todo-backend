@@ -13,7 +13,7 @@ app.use(express.urlencoded())
 app.use(cookieParser());
 app.use(morgan('dev'));
 app.use(cors({
-    origin : "http://ec2-65-0-110-57.ap-south-1.compute.amazonaws.com"
+    origin : "http://localhost:3000"
 }));
 
 //cors
