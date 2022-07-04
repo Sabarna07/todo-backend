@@ -14,7 +14,7 @@ app.use(cookieParser());
 app.use(morgan('dev'));
 
 const corsOptions ={
-   origin:'*', 
+   origin:["http://localhost:3000","http://ec2-65-0-110-57.ap-south-1.compute.amazonaws.com/"], 
    credentials:true
 }
 
