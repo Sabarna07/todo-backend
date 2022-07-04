@@ -12,11 +12,12 @@ app.use(express.json())
 app.use(express.urlencoded())
 app.use(cookieParser());
 app.use(morgan('dev'));
+app.use(cors(*));
 
 //cors
-if (process.env.NODE_ENV === "development") {
-    app.use(cors({ origin: `${process.env.CLIENT_URL}` }));
-  }
+//if (process.env.NODE_ENV === "development") {
+//    app.use(cors({ origin: `${process.env.CLIENT_URL}` }));
+//  }
 
 // bring routes
 const behaviourRoute = require('./routes/behaviour')
